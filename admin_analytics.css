@@ -1,0 +1,396 @@
+:root {
+    --bg-light: #f5f1e6;
+    --sidebar-bg: #f5f1e6;
+    --primary-green: #31573d;
+    --accent-lime: #b4e64b;
+    --card-bg: #ede5d4;
+    --text-dark: #1a1a1a;
+    --text-muted: #5c5c5c;
+    --sidebar-width: 240px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.125em;
+}
+
+.notification-icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.125em;
+}
+
+
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--sidebar-bg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.options,
+.options2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.options2 {
+    margin-top: auto;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+    background-color: rgba(49, 87, 61, 0.05);
+}
+
+.menu-item.active {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.menu-item.red {
+    color: #d9534f;
+}
+
+.post-btn {
+    margin-top: 20px;
+}
+
+.post-btn button {
+    width: 100%;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.layout {
+    position: relative;
+}
+
+.main-content {
+  position: absolute;
+  top: 60px;
+  left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  min-height: calc(100vh - 60px);
+  overflow-y: auto;
+  padding: 25px;
+}
+
+/* --- Header --- */
+.stats-header {
+    margin-bottom: 30px;
+}
+
+.stats-header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.stats-header p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.top-bar {
+    height: var(--top-bar-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+/* --- Statistics Cards Row --- */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: #ede5d4;
+    padding: 25px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card .trend {
+    float: right;
+    font-size: 12px;
+    font-weight: 800;
+    color: #27ae60;
+}
+
+.stat-card .label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.stat-card h2 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+/* --- Main Grid (Chart & Distribution) --- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.white-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* User Growth Chart Simulation */
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.toggle-btns {
+    background: #f0ede4;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.toggle-btns span {
+    font-size: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.toggle-btns span.active {
+    background: white;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 200px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.bar {
+    width: 50px;
+    background: #ecf3ee;
+    border-radius: 4px;
+}
+
+.bar.highlight {
+    background: #e2ede5;
+}
+
+.chart-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #999;
+}
+
+/* Creator Distribution Circle */
+.distribution-content {
+    text-align: center;
+}
+
+.circle-stat {
+    width: 150px;
+    height: 150px;
+    border: 12px solid var(--primary-green);
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle-stat b {
+    font-size: 24px;
+}
+
+.circle-stat small {
+    font-size: 10px;
+    color: #999;
+}
+
+.legend-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/* --- Bottom Grid (Creators & Demographics) --- */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.creator-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.creator-table th {
+    text-align: left;
+    font-size: 11px;
+    color: #aaa;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.creator-table td {
+    padding: 15px 0;
+    font-size: 13px;
+}
+
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-cell img {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+}
+
+.tag {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.tag.art {
+    background: #f0f7f2;
+    color: #31573d;
+}
+
+/* Demographics */
+.demo-card {
+    background: #fdfaf0;
+}
+
+.geo-focus {
+    margin: 20px 0;
+}
+
+.progress-line {
+    height: 6px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-line div {
+    height: 100%;
+    background: var(--primary-green);
+}
+
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.i-tag {
+    background: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    border: 1px solid #eee;
+}
+
+.insight-box {
+    background: var(--primary-green);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.insight-box a {
+    color: var(--accent-lime);
+    text-decoration: none;
+    font-weight: 700;
+}

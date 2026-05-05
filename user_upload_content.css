@@ -1,0 +1,135 @@
+/* --- Hero Section --- */
+.upload-hero {
+    padding: 40px 60px 20px;
+}
+
+.upload-hero h1 {
+    color: #1a3c22;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.upload-hero p {
+    color: #555;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* --- Category Cards --- */
+.category-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 60px;
+}
+
+.cat-card {
+    background: #ede6d3;
+    padding: 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cat-card:hover { transform: translateY(-5px); }
+
+.cat-icon { font-size: 24px; margin-bottom: 15px; color: #1a3c22; }
+.cat-card h3 { color: #1a3c22; margin-bottom: 8px; }
+.cat-card p { font-size: 12px; color: #666; line-height: 1.4; }
+
+/* --- Form Container --- */
+.form-container {
+    margin: 30px 60px;
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.section-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    color: #1a3c22;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 18px;
+    background: #f7f3e8;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* --- Upload Box --- */
+.dropzone {
+    border: 2px dashed #ccd5c5;
+    background: #f7f3e8;
+    border-radius: 12px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.upload-icon-box {
+    background: #d9e3d0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 20px;
+}
+
+.dropzone h3 { font-size: 16px; color: #333; margin-bottom: 8px; }
+.dropzone p { font-size: 12px; color: #888; line-height: 1.5; margin-bottom: 20px; }
+
+.btn-select-files {
+    background: #e5dec5;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* --- Submit Footer --- */
+.form-footer {
+    margin-top: 40px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 30px;
+}
+
+.btn-submit-post {
+    background: #1a3c22;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.send-icon { font-size: 14px; transform: rotate(-45deg); }

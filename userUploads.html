@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard - UIU Talent Showcase</title>
+    <title>My Uploaded Works - UIU Talent Showcase</title>
+    <link rel="stylesheet" href="userUploads.css">
     <link rel="stylesheet" href="talentFeed.css">
-    <link rel="stylesheet" href="leaderboard.css">
 </head>
 <body>
 
     <div class="app-container">
-        
+        <!-- Sidebar (Consistent with previous pages) -->
          <aside class="sidebar">
             <div class="logo">UIU Talent Showcase</div>
 
@@ -23,7 +23,7 @@
                     <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg></span>
                     <span class="wr">Profile</span>
                 </a>
-                <a href="userUploads.html" class="menu-item">
+                <a href="userUploads.html" class="menu-item active">
                     <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M524.2 444.7L327.7 542.5C325.4 543.5 322.9 544 320.4 544C317.9 544 315.4 543.5 313.1 542.5L116.5 444.7C112.5 442.7 112.5 439.4 116.5 437.4L163.6 414C165.9 413 168.4 412.5 170.9 412.5C173.4 412.5 175.9 413 178.2 414L313 481C315.3 482 317.8 482.5 320.3 482.5C322.8 482.5 325.3 482 327.6 481L462.4 414C464.7 413 467.2 412.5 469.7 412.5C472.2 412.5 474.7 413 477 414L524.1 437.4C528.1 439.4 528.1 442.6 524.1 444.6zM524.2 308.2L477.1 284.8C474.8 283.8 472.3 283.3 469.8 283.3C467.3 283.3 464.8 283.8 462.5 284.8L327.7 351.8C325.4 352.8 322.9 353.3 320.4 353.3C317.9 353.3 315.4 352.8 313.1 351.8L178.3 284.7C176 283.7 173.5 283.2 171 283.2C168.5 283.2 166 283.7 163.7 284.7L116.5 308.1C112.5 310.1 112.5 313.4 116.5 315.4L313 413.2C315.3 414.2 317.8 414.7 320.3 414.7C322.8 414.7 325.3 414.2 327.6 413.2L524.1 315.4C528.1 313.4 528.1 310.1 524.1 308.1zM116.5 194.4L313 284.7C317.7 286.6 323 286.6 327.7 284.7L524.2 194.4C528.2 192.5 528.2 189.5 524.2 187.7L327.7 97.4C323 95.5 317.7 95.5 313 97.4L116.5 187.7C112.5 189.5 112.5 192.6 116.5 194.4z"/></svg></span>
                     <span class="wr">My Posts</span>
                 </a>
@@ -31,7 +31,7 @@
                     <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M544 513L397.2 364.2C417.2 336.3 429.1 302 429.1 265C429.1 171.9 354.4 96.1 262.6 96.1C170.7 96 96 171.8 96 264.9C96 358 170.7 433.8 262.5 433.8C302.3 433.8 338.8 419.6 367.5 395.9L513.5 544L544 513zM262.5 394.8C191.9 394.8 134.4 336.5 134.4 264.9C134.4 193.3 191.9 135 262.5 135C333.1 135 390.6 193.3 390.6 264.9C390.6 336.5 333.2 394.8 262.5 394.8z"/></svg></span>
                     <span class="wr">Search</span>
                 </a>
-                <a href="leaderboard.html" class="menu-item active">
+                <a href="leaderboard.html" class="menu-item">
                     <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M256 144C256 117.5 277.5 96 304 96L336 96C362.5 96 384 117.5 384 144L384 496C384 522.5 362.5 544 336 544L304 544C277.5 544 256 522.5 256 496L256 144zM64 336C64 309.5 85.5 288 112 288L144 288C170.5 288 192 309.5 192 336L192 496C192 522.5 170.5 544 144 544L112 544C85.5 544 64 522.5 64 496L64 336zM496 160L528 160C554.5 160 576 181.5 576 208L576 496C576 522.5 554.5 544 528 544L496 544C469.5 544 448 522.5 448 496L448 208C448 181.5 469.5 160 496 160z"/></svg></span>
                     <span class="wr">Leader-board</span>
                 </a>
@@ -69,192 +69,108 @@
                 </div>
             </header>
 
-            <section class="leaderboard-header">
+            <section class="works-header">
                 <div class="title-area">
-                    <h1>Leaderboard</h1>
-                    <p>Recognizing the top digital artisans and their exceptional contributions.</p>
+                    <h1>My Uploaded Works</h1>
+                    <p>Manage your portfolio and track the performance of your artistic contributions.</p>
                 </div>
-                <div class="time-filter">
-                    <button class="active">Daily</button>
-                    <button>Weekly</button>
-                    <button>Monthly</button>
+                <div class="status-filter">
+                    <button class="active">All Posts</button>
+                    <button>Published</button>
+                    <button>Drafts</button>
                 </div>
             </section>
 
-            <!-- Podium / Top 3 -->
-            <!-- Updated Podium / Top 3 -->
-<section class="podium">
-    <div class="podium-card rank-2">
-        <div class="rank-badge">2</div>
-        <div class="podium-avatar" style="background-image: url('image/Sanjida.jpeg');"></div>
-        <div class="podium-info">
-            <h3>Sanjida Hossain</h3>
-            <p class="specialty">Data Analyst</p>
-            <button class="btn-follow-lite">Follow</button>
-        </div>
-    </div>
+            <div class="content-layout">
+                <!-- Left: Portfolio Grid -->
+                <div class="portfolio-management">
+                    <!-- Featured Post -->
+                    <article class="work-card featured-work">
+                        <div class="work-media">
+                            <img src="https://www.foodandwine.com/thmb/TBfOfh9gGO5_NqQOTPJoO_n3Wxc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/clay-pots-FT-MAG0320-9fd96c724ed84a4c99e9d0b75476c09e.jpg" alt="Metamorphic Clay">
+                            <span class="status-badge published">● PUBLISHED</span>
+                        </div>
+                        <div class="work-info">
+                            <div class="work-header">
+                                <div>
+                                    <h3>Metamorphic Clay Series 01</h3>
+                                    <p class="meta">VISUAL ARTS • POSTED 2 DAYS AGO</p>
+                                </div>
+                                <div class="edit-actions">
+                                    <button class="icon-btn">✎</button>
+                                    <button class="icon-btn delete">🗑</button>
+                                </div>
+                            </div>
+                            <div class="work-stats">
+                                <span>👁 1.2k Views</span>
+                                <span>❤️ 482 Likes</span>
+                                <span>💬 24 Comments</span>
+                            </div>
+                        </div>
+                    </article>
 
-    <div class="podium-card rank-1">
-        <div class="masterpiece-badge">★ MASTERPIECE</div>
-        <div class="podium-avatar-large" style="background-image: url('https://scontent.fdac187-1.fna.fbcdn.net/v/t39.30808-6/630812316_122280164504069212_882821173884720834_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeHc-jLQ96Bj-iO5guRArjb--R0kLNz86m75HSQs3Pzqbvxhn3dMlCfrXsq50trRxnHb9znrK6R0fvyY7JmgJdiU&_nc_ohc=LZakRX_3VYgQ7kNvwElC96E&_nc_oc=AdpYILMuecvUzfSsephMgreuIhzGZdT0Z6fY71SsEmuiBKNza5BEw9ZF5Lchl8fF6O8&_nc_zt=23&_nc_ht=scontent.fdac187-1.fna&_nc_gid=w-PNs4Y3FRykSvyTytWuXA&_nc_ss=7b2a8&oh=00_Af6NQgl5C4lv5IhNV4lfpfL2W2PX6IxNT9zaHXhWIwrXBA&oe=69FA9373');"></div>
-        <div class="podium-info">
-            <h2>Gazi Rafat Al Kafi</h2>
-            <p class="specialty">Software Engineer</p>
-            <div class="stats-row">
-                <div class="stat-item"><strong>1.2M</strong><span>VIEWS</span></div>
-                <div class="stat-item"><strong>45k</strong><span>APPRECIATIONS</span></div>
-                <div class="stat-item"><strong>310</strong><span>CREATIONS</span></div>
-            </div>
-            <button class="btn-follow-lite">Follow</button>
-        </div>
-    </div>
+                    <div class="sub-grid">
+                        <!-- Draft Card -->
+                        <article class="work-card small">
+                            <div class="work-media small-media">
+                                <img src="https://images.wallpapersden.com/image/download/abstract-wave-grey-duotone_bmdmaWmUmZqaraWkpJRnamtlrWZpaGo.jpg" alt="Digital Bloom">
+                                <span class="status-badge draft">● DRAFT</span>
+                            </div>
+                            <div class="work-info">
+                                <h3>Digital Bloom Concept</h3>
+                                <p class="desc">A study in generative floral patterns and organic movement.</p>
+                                <div class="work-footer">
+                                    <span class="time">Last edited 4h ago</span>
+                                    <a href="#" class="action-link">Edit Draft ⋮</a>
+                                </div>
+                            </div>
+                        </article>
 
-    <div class="podium-card rank-3">
-        <div class="rank-badge">3</div>
-        <div class="podium-avatar" style="background-image: url('https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-881954-2379004.jpg&fm=jpg');"></div>
-        <div class="podium-info">
-            <h3>Mr. X</h3>
-            <p class="specialty">Chess Player</p>
-            <button class="btn-follow-lite">Follow</button>
-        </div>
-    </div>
-</section>
+                        <!-- Pending Card -->
+                        <article class="work-card small">
+                            <div class="work-media small-media">
+                                <img src="https://studio.midsouthaudio.com/wp-content/uploads/2020/12/MSA-slide-01-3.jpg" alt="Acoustic Session">
+                                <span class="status-badge pending">● PENDING REVIEW</span>
+                            </div>
+                            <div class="work-info">
+                                <h3>Acoustic Session: Dawn</h3>
+                                <p class="desc">Original composition performed live in studio environment.</p>
+                                <div class="work-footer">
+                                    <span class="time">Submitted 12h ago</span>
+                                    <a href="#" class="action-link">View Status ⋮</a>
+                                </div>
+                            </div>
+                        </article>
 
-
-            <!-- Rankings Table -->
-            <section class="rankings-table">
-                <div class="table-header">
-                    <span>RANK</span><span>CREATOR</span><span>SCORE</span><span>TREND</span><span>ACTION</span>
-                </div>
-                
-                <div class="table-row top-row">
-                    <div class="rank-num">1</div>
-                    <div class="creator-info">
-                        <div class="mini-avatar"></div>
-                        <div>
-                            <strong>Gazi Rafat Al Kafi</strong>
-                            <p>Software Engineer</p>
+                        <!-- Upload Placeholder -->
+                        <div class="upload-placeholder">
+                            <div class="add-icon">+</div>
+                            <h3>Upload New Talent</h3>
+                            <p>Share your latest masterpiece with the UIU community.</p>
                         </div>
                     </div>
-                    <div class="score">45,210</div>
-                    <div class="trend up">📈 +12%</div>
-                    <div><button class="btn-action-follow">FOLLOW</button></div>
                 </div>
 
-                <!-- Repeat rows as needed -->
-                <div class="table-row">
-                    <div class="rank-num">2</div>
-                    <div class="creator-info">
-                        <div class="mini-avatar"></div>
-                        <div><strong>Sanjida Hossain</strong><p>Data Analyst</p></div>
-                    </div>
-                    <div class="score">32,840</div>
-                    <div class="trend up">📈 +12%</div>
-                    <div><button class="btn-action-follow">FOLLOW</button></div>
-                </div>
-                <div class="table-row top-row">
-                    <div class="rank-num">3</div>
-                    <div class="creator-info">
-                        <div class="mini-avatar"></div>
-                        <div>
-                            <strong>Mr. Y</strong>
-                            <p>Chess Player</p>
+                <!-- Right: Performance Sidebar -->
+                <aside class="performance-summary">
+                    <div class="summary-card">
+                        <div class="trend-icon">📈</div>
+                        <h2>Performance Summary</h2>
+                        <p>Your content engagement is up by 12% this week. Keep sharing your talent!</p>
+                        
+                        <div class="data-row">
+                            <span>Total Engagement</span>
+                            <strong>42.5k</strong>
                         </div>
-                    </div>
-                    <div class="score">45,210</div>
-                    <div class="trend up">📈 +12%</div>
-                    <div><button class="btn-action-follow">FOLLOW</button></div>
-                </div>
-
-                <div class="table-row">
-                    <div class="rank-num">4</div>
-                    <div class="creator-info">
-                        <div class="mini-avatar"></div>
-                        <div><strong>Mr. Z</strong><p>Data Analyst</p></div>
-                    </div>
-                    <div class="score">32,840</div>
-                    <div class="trend up">📈 +12%</div>
-                    <div><button class="btn-action-follow">FOLLOW</button></div>
-                </div>
-                
-                <div class="table-row top-row">
-                    <div class="rank-num">5</div>
-                    <div class="creator-info">
-                        <div class="mini-avatar"></div>
-                        <div>
-                            <strong>Mr. V</strong>
-                            <p>Chess Player</p>
+                        <div class="data-row">
+                            <span>Profile Hits</span>
+                            <strong>8.1k</strong>
                         </div>
+
+                        <button class="btn-analytics">View Analytics Details</button>
                     </div>
-                    <div class="score">45,210</div>
-                    <div class="trend up">📈 +12%</div>
-                    <div><button class="btn-action-follow">FOLLOW</button></div>
-                </div>
-
-            </section>
-
-            <div class="load-more-rankings">LOAD MORE RANKINGS</div>
-
-            <!-- Highlights Section -->
-            <section class="highlights-section">
-    <div class="highlights-header">
-        <div class="h-title">
-            <h2>This Week's Highlights</h2>
-            <p>Exceptional works from our top-ranked creators.</p>
-        </div>
-        <a href="#" class="gallery-link">|| GALLERY</a>
-    </div>
-    
-    <div class="highlight-grid">
-        <div class="h-card">
-            <div class="h-img-wrapper">
-                <img src="https://tse2.mm.bing.net/th/id/OIP.wPHNAqTCXd63b68BuQEHNgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Emerald Silk">
+                </aside>
             </div>
-            <div class="h-card-footer">
-                <div class="h-user">
-                    <div class="h-avatar"></div>
-                    <div class="h-details">
-                        <span class="h-author">ELENA ROSTOVA</span>
-                        <span class="h-work">Emerald Silk Cascades</span>
-                    </div>
-                </div>
-                <div class="h-likes">❤️ 12.4k</div>
-            </div>
-        </div>
-
-        <div class="h-card">
-            <div class="h-img-wrapper">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.qzOG_4KMi7-F4rACiRbNHwHaNK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Brutalism">
-            </div>
-            <div class="h-card-footer">
-                <div class="h-user">
-                    <div class="h-avatar"></div>
-                    <div class="h-details">
-                        <span class="h-author">JULIAN THORNE</span>
-                        <span class="h-work">Brutalism in Warmth</span>
-                    </div>
-                </div>
-                <div class="h-likes">❤️ 9.1k</div>
-            </div>
-        </div>
-
-        <div class="h-card">
-            <div class="h-img-wrapper">
-                <img src="https://tse3.mm.bing.net/th/id/OIP.TFI8Ihb-HGtoUh3TZmwhlgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Liquid Dynamics">
-            </div>
-            <div class="h-card-footer">
-                <div class="h-user">
-                    <div class="h-avatar"></div>
-                    <div class="h-details">
-                        <span class="h-author">MARCUS VANE</span>
-                        <span class="h-work">Liquid Dynamics v.04</span>
-                    </div>
-                </div>
-                <div class="h-likes">❤️ 8.8k</div>
-            </div>
-        </div>
-    </div>
-</section>
         </main>
     </div>
 
