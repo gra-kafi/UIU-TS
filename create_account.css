@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f6f3eb;
+    color: #1e1e1e;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5vh 8vw; /* Fluid vertical and horizontal padding */
+    background-color: #f6f3eb;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.2vw; /* Scales with screen width */
+}
+
+.nav-links a {
+    margin: 0 1.2vw;
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9vw;
+    transition: 0.3s;
+}
+
+.nav-links a.active {
+    color: #1b5e20;
+    border-bottom: 0.25vh solid #1b5e20;
+}
+
+.signup-btn {
+    background: #1b5e20;
+    color: white;
+    padding: 1.2vh 1.8vw;
+    border-radius: 0.8vh;
+    text-decoration: none;
+    font-size: 0.9vw;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: #144a18;
+}
+
+#home:hover, #leaderboard:hover, #about:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+/* CARD */
+.card {
+    background: white;
+    width: 28vw; /* Fluid width relative to viewport */
+    min-width: 340px; /* Prevents card from getting too thin */
+    margin: 5vh auto;
+    padding: 4vh 2.5vw;
+    border-radius: 1.5vh;
+    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    font-size: 1.8vw;
+    margin-bottom: 0.5vh;
+}
+
+.card small {
+    display: block;
+    color: #777;
+    font-size: 0.85vw;
+    margin-bottom: 1.5vh;
+}
+
+.form-group {
+    margin-top: 2vh;
+}
+
+label {
+    font-size: 0.75vw;
+    letter-spacing: 0.05vw;
+    color: #555;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 1.5vh;
+    margin-top: 0.8vh;
+    border-radius: 0.8vh;
+    border: none;
+    background: #efe3c7;
+    outline: none;
+    font-size: 0.9vw;
+}
+
+.btn-primary {
+    width: 100%;
+    margin-top: 3vh;
+    padding: 1.8vh;
+    border: none;
+    background: #1f4d2e;
+    color: white;
+    border-radius: 1vh;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1vw;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #144a18;
+}
+
+.divider {
+    text-align: center;
+    margin: 3vh 0;
+    color: #777;
+    font-size: 0.75vw;
+}
+
+.social {
+    display: flex;
+    gap: 1vw;
+}
+
+.social button {
+    flex: 1;
+    padding: 1.5vh;
+    border-radius: 0.8vh;
+    border: none;
+    background: #efe3c7;
+    cursor: pointer;
+    font-size: 0.85vw;
+    transition: 0.3s;
+}
+
+#google:hover, #linkedin:hover {
+    color: white;
+    background-color: #1b5e20;
+}
+
+.signin {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 0.85vw;
+}
+
+.signin a {
+    color: #1f4d2e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+    background: #e6dcc7;
+    padding: 5vh 8vw;
+    margin-top: 5vh;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer h4 {
+    font-size: 1vw;
+    margin-bottom: 2vh;
+}
+
+.footer p,
+.footer a {
+    font-size: 0.8vw;
+    color: #555;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1vh;
+}
+
+/* RESPONSIVE BREAKPOINT */
+@media (max-width: 900px) {
+    .navbar { padding: 3vh 5vw; }
+    .logo { font-size: 4vw; }
+    .nav-links { display: none; } /* Standard for mobile */
+    .signup-btn { font-size: 3.5vw; padding: 1.5vh 4vw; }
+    
+    .card { width: 90vw; margin: 4vh auto; }
+    .card h2 { font-size: 6vw; }
+    .card small { font-size: 3.5vw; }
+    
+    label { font-size: 3vw; }
+    input { font-size: 4vw; padding: 2vh; }
+    
+    .btn-primary { font-size: 4.5vw; padding: 2vh; }
+    .divider, .signin { font-size: 3.5vw; }
+    .social button { font-size: 4vw; }
+    
+    .footer-columns { flex-direction: column; gap: 4vh; text-align: center; }
+    .footer h4 { font-size: 5vw; }
+    .footer p, .footer a { font-size: 4vw; }
+}

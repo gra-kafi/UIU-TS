@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OTP - UIU Talent Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="otp.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="logo">UIU Talent Showcase</div>
+
+        <div class="nav-links">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="leaderboard">Leaderboard</a>
+            <a href="#" id="about">About Us</a>
+        </div>
+
+        <a href="creator_login.html" class="signup-btn">Sign In</a>
+    </div>
+
+    <!-- Center Card -->
+    <div class="container">
+        <div class="card">
+            <h2>One time password (OTP)</h2>
+            <p>Enter your one time password (OTP) from your email</p>
+
+            <div class="form-group">
+                <label>Enter the code</label>
+                <!-- Modern OTP Boxes -->
+                <div class="otp-box-container">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                </div>
+            </div>
+
+            <button class="btn"><a href="recover_password.html" id="reset_btn">Send Reset Link</a></button>
+
+            <a href="creator_login.html" class="back-link">← Back to Login</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-columns">
+            <div>
+                <h4>UIU Talent Showcase</h4>
+                <p>A curated space where creativity meets excellence.</p>
+            </div>
+            <div>
+                <h4>Platform</h4>
+                <a href="#">About UIU</a>
+                <a href="#">Careers</a>
+                <a href="#">Media Kit</a>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="#">Contact</a>
+                <a href="#">Help Center</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Automatic Focus Shifting for OTP boxes
+        const inputs = document.querySelectorAll('.otp-input');
+        inputs.forEach((input, index) => {
+            input.addEventListener('input', (e) => {
+                if (e.target.value.length === 1 && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && e.target.value === '' && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
