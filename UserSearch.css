@@ -1,48 +1,85 @@
 :root {
-    --primary-green: #244d2b;
-    --sidebar-bg: #f3ecd8;
-    --main-bg: #fdfcf7;
-    --card-bg: #f0e9d2;
+    --bg-light: #f5f1e6;
+    --sidebar-bg: #f5f1e6;
+    --primary-green: #31573d;
+    --accent-lime: #b4e64b;
+    --card-bg: #ede5d4;
     --text-dark: #1a1a1a;
-    --text-muted: #555;
+    --text-muted: #5c5c5c;
+    --sidebar-width: 240px;
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
-    background-color: var(--main-bg);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
     color: var(--text-dark);
 }
 
-.app-container {
-    display: flex;
+.icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.125em;
+}
+
+.notification-icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.125em;
 }
 
 
 .sidebar {
-    width: 220px;
-    height: 100vh;
+    width: var(--sidebar-width);
     background-color: var(--sidebar-bg);
-    padding: 30px 15px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 30px 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
     position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.options,
+.options2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.options2 {
+    margin-top: auto;
 }
 
 .menu-item {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     padding: 12px 15px;
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--text-muted);
     font-size: 14px;
     border-radius: 8px;
-    margin-bottom: 5px;
+    transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+    background-color: rgba(49, 87, 61, 0.05);
 }
 
 .menu-item.active {
@@ -50,20 +87,24 @@ body {
     color: white;
 }
 
-.btn-post {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    background-color: #3d6344;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
+.menu-item.red {
+    color: #d9534f;
 }
 
-.sign-out { color: #b22a2a; }
+.post-btn {
+    margin-top: 20px;
+}
 
+.post-btn button {
+    width: 100%;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 .main-content {
     margin-left: 220px;
@@ -79,7 +120,11 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-.logo { color: var(--primary-green); font-weight: bold; font-size: 1.2rem; }
+.logo {
+    color: var(--primary-green);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 
 .nav-search input {
     width: 350px;
@@ -112,7 +157,7 @@ body {
     padding: 15px 50px;
     border: 1px solid #eee;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .filter-pills {
@@ -130,7 +175,10 @@ body {
     font-size: 13px;
 }
 
-.pill.active { background: var(--primary-green); color: white; }
+.pill.active {
+    background: var(--primary-green);
+    color: white;
+}
 
 
 .talent-grid {
@@ -151,7 +199,8 @@ body {
 }
 
 .card.featured {
-    grid-row: span 2; /* This makes it tall */
+    grid-row: span 2;
+    /* This makes it tall */
 }
 
 .card-media {
@@ -159,7 +208,9 @@ body {
     height: 200px;
 }
 
-.featured .card-media { height: 350px; }
+.featured .card-media {
+    height: 350px;
+}
 
 .card-media img {
     width: 100%;
@@ -178,22 +229,82 @@ body {
     font-weight: bold;
 }
 
-.badge-video { background: #b4e64b; color: #1a1a1a; }
-.badge-creator { background: var(--primary-green); color: white; }
-.badge-audio { background: #96cc33; color: white; }
-.badge-blog { background: #c5c2b0; color: #333; }
+.badge-video {
+    background: #b4e64b;
+    color: #1a1a1a;
+}
 
-.card-body { padding: 20px; flex-grow: 1; }
-.card-body.centered { text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.badge-creator {
+    background: var(--primary-green);
+    color: white;
+}
 
-.card-body h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--primary-green); }
-.card-body p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 15px;}
+.badge-audio {
+    background: #96cc33;
+    color: white;
+}
 
-.card-footer { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; font-weight: 600;  padding: 1rem;}
-.mini-avatar { width: 24px; height: 24px; background: #ccc; border-radius: 50%; margin-left: 62px;}
+.badge-blog {
+    background: #c5c2b0;
+    color: #333;
+}
 
-.tags { display: flex; gap: 8px; margin-bottom: 20px; }
-.tags span { font-size: 10px; background: #d6d0ba; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-body.centered {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--primary-green);
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.mini-avatar {
+    width: 24px;
+    height: 24px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-left: 62px;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tags span {
+    font-size: 10px;
+    background: #d6d0ba;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
 
 .btn-portfolio {
     background: var(--primary-green);
@@ -221,19 +332,20 @@ body {
     font-weight: bold;
 }
 
-.main-search-bar{
+.main-search-bar {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.fa-solid fa-chevron-down{
+
+.fa-solid fa-chevron-down {
     width: 2em;
     height: 2em;
     vertical-align: -0.125em;
-  }
+}
 
-  .user-avatar img{
+.user-avatar img {
     width: 40px;
     height: 40px;
     background: #ccc;

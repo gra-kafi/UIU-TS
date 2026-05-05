@@ -17,13 +17,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5vh 8vw; /* Fluid vertical and horizontal padding */
+    padding: 2.5vh 8vw;
+    /* Fluid vertical and horizontal padding */
     background-color: #f6f3eb;
 }
 
 .logo {
     font-weight: 600;
-    font-size: 1.25vw; /* Scales font with width */
+    font-size: 1.25vw;
+    /* Scales font with width */
 }
 
 .nav-links a {
@@ -48,11 +50,14 @@ body {
     transition: 0.3s;
 }
 
-.signin-btn:hover, .signup-btn:hover {
+.signin-btn:hover,
+.signup-btn:hover {
     background: #144a18;
 }
 
-#home:hover, #leaderboard:hover, #about:hover {
+#home:hover,
+#leaderboard:hover,
+#about:hover {
     text-decoration: underline;
     color: orange;
 }
@@ -72,7 +77,8 @@ body {
 }
 
 .left h1 {
-    font-size: 3.5vw; /* Large fluid header */
+    font-size: 3.5vw;
+    /* Large fluid header */
     color: #1b5e20;
     margin-bottom: 2.5vh;
 }
@@ -89,8 +95,10 @@ body {
     background: #efe6d4;
     padding: 4vh 2.5vw;
     border-radius: 2vh;
-    width: 25vw; /* Card width relative to screen */
-    min-width: 320px; /* Safety fallback for tiny windows */
+    width: 25vw;
+    /* Card width relative to screen */
+    min-width: 320px;
+    /* Safety fallback for tiny windows */
     box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.08);
 }
 
@@ -205,7 +213,8 @@ body {
     font-weight: 500;
 }
 
-#google:hover, #linkedin:hover {
+#google:hover,
+#linkedin:hover {
     color: white;
     background-color: #1b5e20;
 }
@@ -228,7 +237,8 @@ body {
     margin-bottom: 1.5vh;
 }
 
-.footer p, .footer a {
+.footer p,
+.footer a {
     font-size: 0.85vw;
     color: #555;
     text-decoration: none;
@@ -248,24 +258,65 @@ body {
         max-width: 100%;
         margin-bottom: 4vh;
     }
-    
-    .left h1 { font-size: 8vw; }
-    .left p { font-size: 4vw; }
+
+    .left h1 {
+        font-size: 8vw;
+    }
+
+    .left p {
+        font-size: 4vw;
+    }
 
     .card {
         width: 100%;
         padding: 5vh 5vw;
     }
-    
-    .logo { font-size: 5vw; }
-    .nav-links { display: none; }
-    .signup-btn { font-size: 4vw; padding: 1.5vh 4vw; }
-    
-    .card h2 { font-size: 6vw; }
-    .card p, .tabs span, .input-group label, .forgot, .divider, .bottom-text { font-size: 3.5vw; }
-    .input-group input, .signin-btn, .social button { font-size: 4vw; padding: 2vh; }
-    
-    .footer-columns { flex-direction: column; gap: 4vh; text-align: center; }
-    .footer h4 { font-size: 5vw; }
-    .footer p, .footer a { font-size: 4vw; }
+
+    .logo {
+        font-size: 5vw;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .signup-btn {
+        font-size: 4vw;
+        padding: 1.5vh 4vw;
+    }
+
+    .card h2 {
+        font-size: 6vw;
+    }
+
+    .card p,
+    .tabs span,
+    .input-group label,
+    .forgot,
+    .divider,
+    .bottom-text {
+        font-size: 3.5vw;
+    }
+
+    .input-group input,
+    .signin-btn,
+    .social button {
+        font-size: 4vw;
+        padding: 2vh;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 4vh;
+        text-align: center;
+    }
+
+    .footer h4 {
+        font-size: 5vw;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 4vw;
+    }
 }

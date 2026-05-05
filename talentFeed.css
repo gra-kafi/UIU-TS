@@ -21,17 +21,17 @@ body {
     color: var(--text-dark);
 }
 
- .icon {
+.icon {
     width: 2em;
     height: 2em;
     vertical-align: -0.125em;
-  }
+}
 
-.notification-icon{
+.notification-icon {
     width: 2em;
     height: 2em;
     vertical-align: -0.125em;
-}  
+}
 
 
 .sidebar {
@@ -41,7 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 30px 20px;
-    border-right: 1px solid rgba(0,0,0,0.05);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
     position: fixed;
     left: 0;
     top: 0;
@@ -55,7 +55,8 @@ body {
     margin-bottom: 40px;
 }
 
-.options, .options2 {
+.options,
+.options2 {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -123,7 +124,7 @@ body {
     width: 400px;
     padding: 12px 20px;
     border-radius: 8px;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     background: white;
     outline: none;
 }
@@ -139,7 +140,7 @@ body {
     cursor: pointer;
 }
 
-.user-avatar img{
+.user-avatar img {
     width: 40px;
     height: 40px;
     background: #ccc;
@@ -179,7 +180,11 @@ body {
     border-radius: 8px;
 }
 
-.sort-label { font-size: 12px; font-weight: bold; color: #999; }
+.sort-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+}
 
 .sort-select {
     border: none;
@@ -192,7 +197,7 @@ body {
 
 .talent-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding-bottom: 40px;
 }
@@ -204,7 +209,9 @@ body {
     transition: transform 0.2s ease;
 }
 
-.card:hover { transform: translateY(-5px); }
+.card:hover {
+    transform: translateY(-5px);
+}
 
 .card-img-wrapper {
     position: relative;
@@ -228,7 +235,9 @@ body {
     border-radius: 5px;
 }
 
-.card-body { padding: 20px; }
+.card-body {
+    padding: 20px;
+}
 
 .card-title-row {
     display: flex;
@@ -245,7 +254,12 @@ body {
     margin-bottom: 20px;
 }
 
-.mini-avatar { width: 24px; height: 24px; background: #a8c19a; border-radius: 50%; }
+.mini-avatar {
+    width: 24px;
+    height: 24px;
+    background: #a8c19a;
+    border-radius: 50%;
+}
 
 .card-footer {
     display: flex;
@@ -275,6 +289,6 @@ body {
     border: none;
     font-size: 28px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     z-index: 200;
 }

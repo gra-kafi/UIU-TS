@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UIU Talent Showcase |User Search</title>
-    <link rel="stylesheet" href="UserSearch.css">
-    <link rel="stylesheet" href="talentFeed.css">
+    <title>UIU Talent Showcase | Talent Feed</title>
+    <link rel="stylesheet" href="profile.css">
+
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                         </svg></span>
                     <span class="wr">Discover</span>
                 </a>
-                <a href="profile.html" class="menu-item">
+                <a href="profile.html" class="menu-item active">
                     <span class="icon"><svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                             <path
@@ -40,7 +40,7 @@
                         </svg></span>
                     <span class="wr">My Posts</span>
                 </a>
-                <a href="UserSearch.html" class="menu-item active">
+                <a href="UserSearch.html" class="menu-item">
                     <span class="icon"><svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                             <path
@@ -82,10 +82,11 @@
             </div>
         </aside>
 
+
         <!-- Main Content -->
         <main class="main-content">
-            <!-- Top Navbar -->
 
+            <!-- Top Header -->
             <header class="top-bar">
                 <div class="search-container">
                     <input type="text" placeholder="Search talent...">
@@ -98,155 +99,159 @@
                                 d="M320 64C306.7 64 296 74.7 296 88L296 97.7C214.6 109.3 152 179.4 152 264L152 278.5C152 316.2 142 353.2 123 385.8L101.1 423.2C97.8 429 96 435.5 96 442.2C96 463.1 112.9 480 133.8 480L506.2 480C527.1 480 544 463.1 544 442.2C544 435.5 542.2 428.9 538.9 423.2L517 385.7C498 353.1 488 316.1 488 278.4L488 263.9C488 179.3 425.4 109.2 344 97.6L344 87.9C344 74.6 333.3 63.9 320 63.9zM488.4 432L151.5 432L164.4 409.9C187.7 370 200 324.6 200 278.5L200 264C200 197.7 253.7 144 320 144C386.3 144 440 197.7 440 264L440 278.5C440 324.7 452.3 370 475.5 409.9L488.4 432zM252.1 528C262 556 288.7 576 320 576C351.3 576 378 556 387.9 528L252.1 528z" />
                         </svg>
                     </div>
-                    <div class="user-avatar"><img
-                            src="https://scontent.fdac187-1.fna.fbcdn.net/v/t39.30808-6/630812316_122280164504069212_882821173884720834_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeHc-jLQ96Bj-iO5guRArjb--R0kLNz86m75HSQs3Pzqbvxhn3dMlCfrXsq50trRxnHb9znrK6R0fvyY7JmgJdiU&_nc_ohc=LZakRX_3VYgQ7kNvwElC96E&_nc_oc=AdpYILMuecvUzfSsephMgreuIhzGZdT0Z6fY71SsEmuiBKNza5BEw9ZF5Lchl8fF6O8&_nc_zt=23&_nc_ht=scontent.fdac187-1.fna&_nc_gid=w-PNs4Y3FRykSvyTytWuXA&_nc_ss=7b2a8&oh=00_Af6NQgl5C4lv5IhNV4lfpfL2W2PX6IxNT9zaHXhWIwrXBA&oe=69FA9373"
+                    <div class="user-avatar"><img src="https://ui-avatars.com/api/?name=Rafat&background=ccc&color=fff"
                             alt="DP"></div>
                 </div>
             </header>
 
-
-            <section class="hero-section">
-                <h1>UIU Talent Showcase</h1>
-                <div class="main-search-bar">
-                    <input type="text" placeholder="Search for creators, videos, audio, or blogs...">
-                </div>
-                <div class="filter-pills">
-                    <button class="pill active">All</button>
-                    <button class="pill">Creators</button>
-                    <button class="pill">Videos</button>
-                    <button class="pill">Audio</button>
-                    <button class="pill">Blogs</button>
-                </div>
-            </section>
-
-
-            <div class="talent-grid">
-                <!-- Video Card -->
-                <article class="card">
-                    <div class="card-media">
-                        <img src="https://archinect.gumlet.io/uploads/7c/7ca54c9123f71ab9ef52a2dac55594f1.png?fit=crop&auto=compress%2Cformat&enlarge=true&w=615&dpr=3"
-                            alt="image">
-                        <span class="badge badge-video">VIDEO</span>
-                    </div>
-                    <div class="card-body">
-                        <h3>Defining the Future of Brutalist UI</h3>
-                        <p>A deep dive into the raw aesthetics of digital brutalism and how to...</p>
-                        <div class="card-footer">
-                            <div class="mini-avatar"></div>
-                            <span>Elena Voss</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <span>♡ 2.1k</span>
-                            <span>⇄ 340</span>
-                        </div>
-                        <button class="view-btn">View →</button>
-                    </div>
-                </article>
-
-                <!-- Featured Creator (Taller Card) -->
-                <article class="card featured">
-                    <div class="card-media">
-                        <img src="https://dvyvvujm9h0uq.cloudfront.net/com/articles/1543483387-reinhart-julian-1145947-unsplash.jpg"
-                            alt="image">
-                        <span class="badge badge-creator">CREATOR</span>
-                    </div>
-                    <div class="card-body centered">
-                        <h3>Marcus Aris</h3>
-                        <p>Editorial Photographer & Digital Strategist specializing in organic textures and light play.
-                        </p>
-                        <div class="tags">
-                            <span>MINIMALISM</span>
-                            <span>EDITORIAL</span>
-                        </div>
-                        <button class="btn-portfolio">View Portfolio</button>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <span>♡ 2.1k</span>
-                            <span>⇄ 340</span>
-                        </div>
-                        <button class="view-btn">View →</button>
-                    </div>
-                </article>
-
-                <!-- Audio Card -->
-                <article class="card">
-                    <div class="card-media">
-                        <img src="https://www.shutterstock.com/image-photo/professional-microphone-suspended-air-studio-260nw-2117318615.jpg"
-                            alt="image">
-                        <span class="badge badge-audio">AUDIO</span>
-                    </div>
-                    <div class="card-body">
-                        <h3>The Sound of Glass: Ambient Textures</h3>
-                        <div class="card-footer">
-                            <div class="mini-avatar"></div>
-                            <span>Julian Thorne</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <span>♡ 2.1k</span>
-                            <span>⇄ 340</span>
-                        </div>
-                        <button class="view-btn">View →</button>
-                    </div>
-                </article>
-
-                <!-- Blog Card -->
-                <article class="card">
-                    <div class="card-media">
-                        <img src="https://i.pinimg.com/736x/51/83/3e/51833e2796e55d38cb67d415175a0378.jpg" alt="image">
-                        <span class="badge badge-blog">BLOG</span>
-                    </div>
-                    <div class="card-body">
-                        <h3>Why We Need More Empty Space</h3>
-                        <p>Exploring the psychological impact of whitespace in high-conversion...</p>
-                        <div class="card-footer">
-                            <div class="mini-avatar"></div>
-                            <span>Sarah Chen</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <span>♡ 2.1k</span>
-                            <span>⇄ 340</span>
-                        </div>
-                        <button class="view-btn">View →</button>
-                    </div>
-                </article>
-
-                <!-- Video Card 2 -->
-                <article class="card">
-                    <div class="card-media">
-                        <img src="https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/28662cb8d7472c583570c1bbade01def.jpg"
-                            alt="image">
-                        <span class="badge badge-video">VIDEO</span>
-                    </div>
-                    <div class="card-body">
-                        <h3>Advanced Node Workflows in UI</h3>
-                        <p>Mastering complex interactions using node-based design systems...</p>
-                        <div class="card-footer">
-                            <div class="mini-avatar"></div>
-                            <span>Alex Rivera</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <span>♡ 2.1k</span>
-                            <span>⇄ 340</span>
-                        </div>
-                        <button class="view-btn">View →</button>
-                    </div>
-                </article>
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+                <h1>Welcome back, Rafat</h1>
+                <p>Your creative space is thriving. You've reached 85% of your monthly growth goal.</p>
             </div>
 
-            <!-- Footer Action -->
-            <div class="load-more">
-                <button>Load More Results <span class="icon"><i class="fa-solid fa-chevron-down"></i></span></button>
+            <!-- Top Stats Grid -->
+            <div class="stats-overview">
+                <!-- Card 1 -->
+                <div class="stat-box dark">
+                    <div class="stat-icon">☁</div>
+                    <span class="stat-title">TOTAL UPLOADS</span>
+                    <h2 class="stat-number">124</h2>
+                    <span class="stat-trend trend-up">↗ +12% from last month</span>
+                </div>
+                <!-- Card 2 -->
+                <div class="stat-box dark">
+                    <div class="stat-icon green-text">♥</div>
+                    <span class="stat-title">TOTAL LIKES</span>
+                    <h2 class="stat-number">1.2 M</h2>
+                    <span class="stat-trend green-text">↑ Increased engagement</span>
+                </div>
+                <!-- Card 3 -->
+                <div class="stat-box dark">
+                    <div class="stat-icon green-text">🏆</div>
+                    <span class="stat-title">CURRENT RANK</span>
+                    <h2 class="stat-number">#1 <span class="sub-number">/ 500</span></h2>
+                    <span class="stat-trend text-muted">Top 1% of Creators</span>
+                </div>
             </div>
+
+            <!-- Analytics and Activity Layout -->
+            <div class="dashboard-middle-grid">
+
+                <!-- Weekly Growth Chart -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div>
+                            <h2>Weekly Growth</h2>
+                            <p>Overview of viewer interaction</p>
+                        </div>
+                        <div class="chart-tabs">
+                            <button class="active">Week</button>
+                            <button>Month</button>
+                        </div>
+                    </div>
+
+                    <div class="bar-chart">
+                        <div class="bar-column">
+                            <div class="bar" style="height: 35%;"></div><span>MON</span>
+                        </div>
+                        <div class="bar-column">
+                            <div class="bar" style="height: 60%;"></div><span>TUE</span>
+                        </div>
+                        <div class="bar-column">
+                            <div class="bar active" style="height: 85%;"></div><span>WED</span>
+                        </div>
+                        <div class="bar-column">
+                            <div class="bar" style="height: 45%;"></div><span>THU</span>
+                        </div>
+                        <div class="bar-column">
+                            <div class="bar" style="height: 65%;"></div><span>FRI</span>
+                        </div>
+                        <div class="bar-column">
+                            <div class="bar" style="height: 75%;"></div><span>SAT</span>
+                        </div>
+                        <div class="bar-column">
+                            <div class="bar" style="height: 50%;"></div><span>SUN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity Feed -->
+                <div class="activity-container">
+                    <h2>Recent Activity</h2>
+
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon star">★</div>
+                            <div class="activity-text">
+                                <p>Post "Nordic Design" featured in Weekly Spotlight</p>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon user">👥</div>
+                            <div class="activity-text">
+                                <p>New follower: Marcus Aurelius Studio</p>
+                                <span>5 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon comment">💬</div>
+                            <div class="activity-text">
+                                <p>New comment on "The Green Path"</p>
+                                <span>Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="view-all-btn">View All Activity</button>
+                </div>
+            </div>
+
+            <!-- Recent Submissions List -->
+            <div class="recent-submissions">
+                <div class="section-header-row">
+                    <div>
+                        <h2>Recent Submissions</h2>
+                        <p>Showcasing your latest curated work</p>
+                    </div>
+                    <a href="#" class="view-portfolio">View Portfolio →</a>
+                </div>
+
+                <div class="submission-cards-layout">
+                    <!-- Media Card 1 -->
+                    <div class="media-card">
+                        <div class="media-thumbnail video-thumb">
+                            <div class="play-btn-overlay">▶</div>
+                            <span class="media-badge">VIDEO</span>
+                        </div>
+                        <div class="media-info">
+                            <h3>The Solitude of Pines</h3>
+                            <p>Short Film • 4.2k views</p>
+                        </div>
+                    </div>
+
+                    <!-- Media Card 2 -->
+                    <div class="media-card">
+                        <div class="media-thumbnail audio-thumb">
+                            <span class="media-badge">AUDIO</span>
+                            <div class="audio-bars">
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="media-info">
+                            <h3>Atmosphere & Echoes</h3>
+                            <p>Podcast Ep. 42 • 2.5k listeners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </main>
+
+        <button class="fab">+</button>
     </div>
 
 </body>

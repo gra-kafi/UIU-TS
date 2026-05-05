@@ -17,13 +17,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5vh 8vw; /* Fluid vertical and horizontal padding */
+    padding: 2.5vh 8vw;
+    /* Fluid vertical and horizontal padding */
     background-color: #f6f3eb;
 }
 
 .logo {
     font-weight: 600;
-    font-size: 1.2vw; /* Scales with screen width */
+    font-size: 1.2vw;
+    /* Scales with screen width */
 }
 
 .nav-links a {
@@ -53,7 +55,9 @@ body {
     background: #144a18;
 }
 
-#home:hover, #leaderboard:hover, #about:hover {
+#home:hover,
+#leaderboard:hover,
+#about:hover {
     text-decoration: underline;
     color: orange;
 }
@@ -61,8 +65,10 @@ body {
 /* CARD */
 .card {
     background: white;
-    width: 28vw; /* Fluid width relative to viewport */
-    min-width: 340px; /* Prevents card from getting too thin */
+    width: 28vw;
+    /* Fluid width relative to viewport */
+    min-width: 340px;
+    /* Prevents card from getting too thin */
     margin: 5vh auto;
     padding: 4vh 2.5vw;
     border-radius: 1.5vh;
@@ -144,7 +150,8 @@ input {
     transition: 0.3s;
 }
 
-#google:hover, #linkedin:hover {
+#google:hover,
+#linkedin:hover {
     color: white;
     background-color: #1b5e20;
 }
@@ -189,23 +196,72 @@ input {
 
 /* RESPONSIVE BREAKPOINT */
 @media (max-width: 900px) {
-    .navbar { padding: 3vh 5vw; }
-    .logo { font-size: 4vw; }
-    .nav-links { display: none; } /* Standard for mobile */
-    .signup-btn { font-size: 3.5vw; padding: 1.5vh 4vw; }
-    
-    .card { width: 90vw; margin: 4vh auto; }
-    .card h2 { font-size: 6vw; }
-    .card small { font-size: 3.5vw; }
-    
-    label { font-size: 3vw; }
-    input { font-size: 4vw; padding: 2vh; }
-    
-    .btn-primary { font-size: 4.5vw; padding: 2vh; }
-    .divider, .signin { font-size: 3.5vw; }
-    .social button { font-size: 4vw; }
-    
-    .footer-columns { flex-direction: column; gap: 4vh; text-align: center; }
-    .footer h4 { font-size: 5vw; }
-    .footer p, .footer a { font-size: 4vw; }
+    .navbar {
+        padding: 3vh 5vw;
+    }
+
+    .logo {
+        font-size: 4vw;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Standard for mobile */
+    .signup-btn {
+        font-size: 3.5vw;
+        padding: 1.5vh 4vw;
+    }
+
+    .card {
+        width: 90vw;
+        margin: 4vh auto;
+    }
+
+    .card h2 {
+        font-size: 6vw;
+    }
+
+    .card small {
+        font-size: 3.5vw;
+    }
+
+    label {
+        font-size: 3vw;
+    }
+
+    input {
+        font-size: 4vw;
+        padding: 2vh;
+    }
+
+    .btn-primary {
+        font-size: 4.5vw;
+        padding: 2vh;
+    }
+
+    .divider,
+    .signin {
+        font-size: 3.5vw;
+    }
+
+    .social button {
+        font-size: 4vw;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 4vh;
+        text-align: center;
+    }
+
+    .footer h4 {
+        font-size: 5vw;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 4vw;
+    }
 }

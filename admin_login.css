@@ -8,7 +8,8 @@
 body {
     background: #f6f3eb;
     color: #1e1e1e;
-    min-height: 100vh; /* Ensure body takes full height */
+    min-height: 100vh;
+    /* Ensure body takes full height */
     overflow-x: hidden;
 }
 
@@ -23,7 +24,8 @@ body {
 
 .logo {
     font-weight: 600;
-    font-size: 1.2vw; /* Scales with width */
+    font-size: 1.2vw;
+    /* Scales with width */
 }
 
 .nav-links a {
@@ -48,7 +50,9 @@ body {
     transition: 0.3s;
 }
 
-#home:hover, #leaderboard:hover, #about:hover {
+#home:hover,
+#leaderboard:hover,
+#about:hover {
     text-decoration: underline;
     color: orange;
 }
@@ -87,8 +91,10 @@ body {
     background: #efe6d4;
     padding: 4vh 2.5vw;
     border-radius: 2vh;
-    width: 25vw; /* Card width relative to screen */
-    min-width: 320px; /* Safety fallback */
+    width: 25vw;
+    /* Card width relative to screen */
+    min-width: 320px;
+    /* Safety fallback */
     box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.08);
 }
 
@@ -98,7 +104,8 @@ body {
     margin-bottom: 3vh;
 }
 
-.tabs span, .tabs a {
+.tabs span,
+.tabs a {
     font-size: 0.9vw;
     cursor: pointer;
     color: #777;
@@ -196,7 +203,9 @@ body {
     text-decoration: none;
     font-weight: 500;
 }
-#google:hover, #linkedin:hover {
+
+#google:hover,
+#linkedin:hover {
     color: white;
     background-color: #1b5e20;
 }
@@ -220,7 +229,8 @@ body {
     margin-bottom: 2vh;
 }
 
-.footer p, .footer a {
+.footer p,
+.footer a {
     font-size: 0.8vw;
     color: #555;
     text-decoration: none;
@@ -230,13 +240,42 @@ body {
 
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
-    .container { flex-direction: column; text-align: center; }
-    .left { max-width: 100%; }
-    .card { width: 90vw; }
-    .logo { font-size: 4vw; }
-    .nav-links { display: none; } /* Hide links on mobile for simplicity */
-    .left h1 { font-size: 8vw; }
-    .left p { font-size: 4vw; }
-    .card h2 { font-size: 6vw; }
-    .signin-btn, .social button { font-size: 4vw; }
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left {
+        max-width: 100%;
+    }
+
+    .card {
+        width: 90vw;
+    }
+
+    .logo {
+        font-size: 4vw;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Hide links on mobile for simplicity */
+    .left h1 {
+        font-size: 8vw;
+    }
+
+    .left p {
+        font-size: 4vw;
+    }
+
+    .card h2 {
+        font-size: 6vw;
+    }
+
+    .signin-btn,
+    .social button {
+        font-size: 4vw;
+    }
 }

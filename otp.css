@@ -48,7 +48,9 @@ body {
     background: #144a18;
 }
 
-#home:hover, #leaderboard:hover, #about:hover {
+#home:hover,
+#leaderboard:hover,
+#about:hover {
     color: orange;
     text-decoration: underline;
 }
@@ -58,15 +60,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1; /* Fills remaining space */
+    flex: 1;
+    /* Fills remaining space */
 }
 
 .card {
     background: #d9cfb5;
     padding: 5vh 3vw;
     border-radius: 1.5vh;
-    width: 25vw; /* Scales with screen width */
-    min-width: 320px; /* Safety for very narrow screens */
+    width: 25vw;
+    /* Scales with screen width */
+    min-width: 320px;
+    /* Safety for very narrow screens */
     text-align: center;
     box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.08);
 }
@@ -172,7 +177,8 @@ body {
     margin-bottom: 1.5vh;
 }
 
-.footer p, .footer a {
+.footer p,
+.footer a {
     color: #555;
     text-decoration: none;
     display: block;
@@ -184,16 +190,35 @@ body {
     .card {
         width: 85vw;
     }
-    .logo { font-size: 4vw; }
-    .nav-links { display: none; }
-    .card h2 { font-size: 6vw; }
-    .card p, .btn, .back-link { font-size: 3.5vw; }
-    .form-group label { font-size: 3vw; }
-    .otp-input { 
-        width: 15vw; 
-        height: 15vw; 
-        font-size: 6vw; 
+
+    .logo {
+        font-size: 4vw;
     }
+
+    .nav-links {
+        display: none;
+    }
+
+    .card h2 {
+        font-size: 6vw;
+    }
+
+    .card p,
+    .btn,
+    .back-link {
+        font-size: 3.5vw;
+    }
+
+    .form-group label {
+        font-size: 3vw;
+    }
+
+    .otp-input {
+        width: 15vw;
+        height: 15vw;
+        font-size: 6vw;
+    }
+
     .footer-columns {
         flex-direction: column;
         gap: 3vh;

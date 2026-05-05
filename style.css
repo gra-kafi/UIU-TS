@@ -79,7 +79,9 @@ body {
     gap: 5vw;
 }
 
-.hero-content { flex: 1; }
+.hero-content {
+    flex: 1;
+}
 
 .badge {
     background: #c5e1a5;
@@ -96,7 +98,9 @@ body {
     color: #1e1e1e;
 }
 
-.hero h1 span { color: #1b5e20; }
+.hero h1 span {
+    color: #1b5e20;
+}
 
 .hero p {
     font-size: 1.1vw;
@@ -106,7 +110,10 @@ body {
     margin-bottom: 4vh;
 }
 
-.hero-btns { display: flex; gap: 1vw; }
+.hero-btns {
+    display: flex;
+    gap: 1vw;
+}
 
 .btn-dark {
     background: #1b5e20;
@@ -135,7 +142,7 @@ body {
 .main-img {
     width: 100%;
     border-radius: 2vh;
-    box-shadow: 2vh 2vh 5vh rgba(0,0,0,0.1);
+    box-shadow: 2vh 2vh 5vh rgba(0, 0, 0, 0.1);
 }
 
 .floating-tile {
@@ -148,7 +155,9 @@ body {
 }
 
 /* EXHIBITION GRID */
-.exhibition { padding: 8vh 8vw; }
+.exhibition {
+    padding: 8vh 8vw;
+}
 
 .section-header {
     display: flex;
@@ -157,9 +166,22 @@ body {
     margin-bottom: 4vh;
 }
 
-.section-header h2 { font-size: 2.2vw; }
-.section-header small { color: #888; font-size: 0.7vw; letter-spacing: 0.1vw; }
-.view-archive { text-decoration: none; color: #1e1e1e; font-size: 0.9vw; font-weight: 600; }
+.section-header h2 {
+    font-size: 2.2vw;
+}
+
+.section-header small {
+    color: #888;
+    font-size: 0.7vw;
+    letter-spacing: 0.1vw;
+}
+
+.view-archive {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 0.9vw;
+    font-weight: 600;
+}
 
 .grid-container {
     display: grid;
@@ -176,8 +198,13 @@ body {
     overflow: hidden;
 }
 
-.tall { grid-row: span 2; }
-.wide { grid-column: span 2; }
+.tall {
+    grid-row: span 2;
+}
+
+.wide {
+    grid-column: span 2;
+}
 
 .card-overlay {
     position: absolute;
@@ -185,7 +212,7 @@ body {
     padding: 2vh 1.5vw;
     color: white;
     width: 100%;
-    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
 }
 
 .tag {
@@ -217,12 +244,14 @@ body {
     padding: 10vh 0;
     display: flex;
     justify-content: center;
-    background: #f6f3eb; /* Matches body background */
+    background: #f6f3eb;
+    /* Matches body background */
 }
 
 /* Main Leaderboard Card */
 .leaderboard-card {
-    background: #1b5e20; /* Deep green from Langing page_2.jpg */
+    background: #1b5e20;
+    /* Deep green from Langing page_2.jpg */
     width: 45vw;
     min-width: 360px;
     padding: 6vh 4vw;
@@ -249,7 +278,8 @@ body {
 
 /* Rank #1 Styling */
 .rank-item.first-place {
-    background: rgba(255, 255, 255, 0.12); /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.12);
+    /* Glassmorphism effect */
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 2.5vh 2vw;
     border-radius: 2vh;
@@ -259,7 +289,11 @@ body {
     margin-bottom: 2.5vh;
 }
 
-.rank-info { display: flex; align-items: center; gap: 1.5vw; }
+.rank-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
 
 .rank-avatar {
     width: 4.5vw;
@@ -285,13 +319,37 @@ body {
     border-radius: 0.5vh;
 }
 
-.user-details h4 { font-size: 1.2vw; margin-bottom: 0.3vh; }
-.verify-check { color: #81c784; font-size: 0.9vw; margin-left: 0.5vw; }
-.user-details p { font-size: 0.85vw; opacity: 0.7; }
+.user-details h4 {
+    font-size: 1.2vw;
+    margin-bottom: 0.3vh;
+}
 
-.rank-score { text-align: right; }
-.score-value { display: block; font-size: 1.8vw; font-weight: 600; }
-.score-label { font-size: 0.6vw; letter-spacing: 0.05vw; opacity: 0.6; }
+.verify-check {
+    color: #81c784;
+    font-size: 0.9vw;
+    margin-left: 0.5vw;
+}
+
+.user-details p {
+    font-size: 0.85vw;
+    opacity: 0.7;
+}
+
+.rank-score {
+    text-align: right;
+}
+
+.score-value {
+    display: block;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+.score-label {
+    font-size: 0.6vw;
+    letter-spacing: 0.05vw;
+    opacity: 0.6;
+}
 
 /* Rank #2 and #3 Styling */
 .rank-item-compact {
@@ -303,7 +361,11 @@ body {
     margin-bottom: 1.2vh;
 }
 
-.position { font-size: 0.9vw; width: 1.5vw; opacity: 0.7; }
+.position {
+    font-size: 0.9vw;
+    width: 1.5vw;
+    opacity: 0.7;
+}
 
 .mini-avatar {
     width: 2.5vw;
@@ -315,8 +377,16 @@ body {
     margin-right: 1.2vw;
 }
 
-.user-name { font-size: 1vw; flex-grow: 1; }
-.points-compact { font-size: 0.9vw; font-weight: 600; opacity: 0.9; }
+.user-name {
+    font-size: 1vw;
+    flex-grow: 1;
+}
+
+.points-compact {
+    font-size: 0.9vw;
+    font-weight: 600;
+    opacity: 0.9;
+}
 
 /* FOOTER */
 .footer {
@@ -336,7 +406,8 @@ body {
     margin-bottom: 1.5vh;
 }
 
-.footer p, .footer a {
+.footer p,
+.footer a {
     font-size: 0.85vw;
     color: #555;
     text-decoration: none;
@@ -356,24 +427,65 @@ body {
         max-width: 100%;
         margin-bottom: 4vh;
     }
-    
-    .left h1 { font-size: 8vw; }
-    .left p { font-size: 4vw; }
+
+    .left h1 {
+        font-size: 8vw;
+    }
+
+    .left p {
+        font-size: 4vw;
+    }
 
     .card {
         width: 100%;
         padding: 5vh 5vw;
     }
-    
-    .logo { font-size: 5vw; }
-    .nav-links { display: none; }
-    .signup-btn { font-size: 4vw; padding: 1.5vh 4vw; }
-    
-    .card h2 { font-size: 6vw; }
-    .card p, .tabs span, .input-group label, .forgot, .divider, .bottom-text { font-size: 3.5vw; }
-    .input-group input, .signin-btn, .social button { font-size: 4vw; padding: 2vh; }
-    
-    .footer-columns { flex-direction: column; gap: 4vh; text-align: center; }
-    .footer h4 { font-size: 5vw; }
-    .footer p, .footer a { font-size: 4vw; }
+
+    .logo {
+        font-size: 5vw;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .signup-btn {
+        font-size: 4vw;
+        padding: 1.5vh 4vw;
+    }
+
+    .card h2 {
+        font-size: 6vw;
+    }
+
+    .card p,
+    .tabs span,
+    .input-group label,
+    .forgot,
+    .divider,
+    .bottom-text {
+        font-size: 3.5vw;
+    }
+
+    .input-group input,
+    .signin-btn,
+    .social button {
+        font-size: 4vw;
+        padding: 2vh;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 4vh;
+        text-align: center;
+    }
+
+    .footer h4 {
+        font-size: 5vw;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 4vw;
+    }
 }
