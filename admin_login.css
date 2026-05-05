@@ -48,6 +48,12 @@ body {
     transition: 0.3s;
 }
 
+#home:hover, #leaderboard:hover, #about:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+
 /* MAIN SECTION */
 .container {
     display: flex;
