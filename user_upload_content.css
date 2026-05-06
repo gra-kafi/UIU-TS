@@ -32,11 +32,26 @@
     transition: transform 0.2s;
 }
 
-.cat-card:hover { transform: translateY(-5px); }
+.cat-card:hover {
+    transform: translateY(-5px);
+}
 
-.cat-icon { font-size: 24px; margin-bottom: 15px; color: #1a3c22; }
-.cat-card h3 { color: #1a3c22; margin-bottom: 8px; }
-.cat-card p { font-size: 12px; color: #666; line-height: 1.4; }
+.cat-icon {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1a3c22;
+}
+
+.cat-card h3 {
+    color: #1a3c22;
+    margin-bottom: 8px;
+}
+
+.cat-card p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+}
 
 /* --- Form Container --- */
 .form-container {
@@ -44,7 +59,7 @@
     background: white;
     border-radius: 15px;
     padding: 40px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
 
 .form-grid {
@@ -99,8 +114,18 @@
     font-size: 20px;
 }
 
-.dropzone h3 { font-size: 16px; color: #333; margin-bottom: 8px; }
-.dropzone p { font-size: 12px; color: #888; line-height: 1.5; margin-bottom: 20px; }
+.dropzone h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.dropzone p {
+    font-size: 12px;
+    color: #888;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
 
 .btn-select-files {
     background: #e5dec5;
@@ -132,4 +157,7 @@
     cursor: pointer;
 }
 
-.send-icon { font-size: 14px; transform: rotate(-45deg); }
+.send-icon {
+    font-size: 14px;
+    transform: rotate(-45deg);
+}
