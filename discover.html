@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#072012",
+                        "surface-container-low": "#f9f3e4",
+                        "tertiary": "#2c2b24",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#102000",
+                        "surface-tint": "#4a6452",
+                        "tertiary-container": "#424139",
+                        "on-secondary-container": "#457000",
+                        "primary-container": "#2d4635",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#97b39e",
+                        "on-surface-variant": "#424843",
+                        "on-secondary-fixed-variant": "#304f00",
+                        "on-error-container": "#93000a",
+                        "primary": "#173020",
+                        "outline": "#737972",
+                        "surface-container": "#f4edde",
+                        "secondary-fixed-dim": "#9dd850",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e8e2d3",
+                        "secondary": "#416900",
+                        "outline-variant": "#c2c8c1",
+                        "primary-fixed-dim": "#b1ceb7",
+                        "inverse-on-surface": "#f7f0e1",
+                        "tertiary-fixed-dim": "#cac6bc",
+                        "surface-bright": "#fff9eb",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#b0ada3",
+                        "primary-fixed": "#ccead2",
+                        "surface-container-high": "#eee8d9",
+                        "on-primary-fixed-variant": "#334c3b",
+                        "secondary-fixed": "#b7f569",
+                        "on-background": "#1e1c13",
+                        "on-tertiary-fixed": "#1c1c15",
+                        "surface-variant": "#e8e2d3",
+                        "on-surface": "#1e1c13",
+                        "inverse-surface": "#333026",
+                        "on-tertiary-fixed-variant": "#48473f",
+                        "secondary-container": "#b7f569",
+                        "background": "#fff9eb",
+                        "inverse-primary": "#b1ceb7",
+                        "surface-dim": "#dfdacb",
+                        "surface": "#fff9eb",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#e6e2d7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "element-gap-md": "20px",
+                        "container-margin": "32px",
+                        "sidebar-width": "260px",
+                        "element-gap-sm": "12px",
+                        "grid-gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            background-color: #f5f1e6;
+            /* Specific request override from JSON background for Organic Modernism feel */
+        }
+    </style>
+</head>
+
+<body class="font-body-md text-on-surface">
+    <!-- TopAppBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md flex items-center justify-between px-container-margin h-16 w-full transition-colors">
+        <button class="active:scale-95 transition-transform hover:bg-surface-container-high rounded-full p-2" onclick="window.location.href='talentFeed.html'">
+            <span class="material-symbols-outlined text-primary">arrow_back</span>
+        </button>
+        <h1 class="font-headline-md text-headline-md text-primary font-bold">TalentShowcase</h1>
+        <button class="active:scale-95 transition-transform hover:bg-surface-container-high rounded-full p-2">
+            <span class="material-symbols-outlined text-primary">more_vert</span>
+        </button>
+    </header>
+    <main class="pt-16 pb-24 max-w-screen-md mx-auto">
+        <!-- Media Player Section -->
+        <section class="relative w-full aspect-video md:aspect-[2.01] bg-black overflow-hidden shadow-lg">
+            <img alt="Guitar close-up" class="w-full h-full object-cover opacity-90"
+                data-alt="A cinematic close-up shot of an acoustic guitar's soundhole and polished wooden body. The lighting is warm and golden, casting soft shadows across the strings and natural grain of the wood. The background is a blurred, cozy studio environment with hints of organic textures and forest green accents. The aesthetic is high-end, sophisticated, and earthy, echoing an Organic Modernist style with a professional, creative atmosphere."
+                src="https://lh3.googleusercontent.com/aida/ADBb0uiPrNi9NIhFra37PrPeJxa3-Ol6JWfN9swDxF22Lfn5Qtta1jPf8ryPi3h8XwalffuP1CXeAkZ0ZTO3Ux15NADkwIBrLxuse-i_BniXwTlBzmP_O61wkQuSY5IVczyf_ax7LV4qCqhnsobVCjVGkF7pgz-qjJ7Z3dTsOW4AmplD_g4JK5J2PizEFruQiUTW30P_8pTY4wVrrGT1GnFHWy5m_TRU1WBUaHq0b20RHhdV2FIrYNUNLMwl1bXEYnsKzSVbHUfoJYWGQCw" />
+            <!-- Player Overlays -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <button
+                    class="w-16 h-16 rounded-full bg-primary/80 text-white flex items-center justify-center active:scale-95 transition-transform">
+                    <span class="material-symbols-outlined !text-4xl"
+                        style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                </button>
+            </div>
+            <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent">
+                <div class="h-1 w-full bg-white/30 rounded-full overflow-hidden">
+                    <div class="h-full w-1/3 bg-secondary"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Content Details -->
+        <article class="px-container-margin py-6">
+            <div class="flex flex-wrap items-center gap-element-gap-sm mb-4">
+                <span
+                    class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps">AUDIO</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Melodic Fusion: Guitar Cover</h2>
+            <!-- Engagement Row -->
+            <div class="flex items-center justify-between mb-8 pb-6 border-b border-outline-variant">
+                <div class="flex items-center gap-4 text-on-surface-variant font-body-md">
+                    <span class="flex items-center gap-1"><span
+                            class="material-symbols-outlined text-[20px]">visibility</span> 2.1k</span>
+                    <span class="flex items-center gap-1"><span
+                            class="material-symbols-outlined text-[20px]">share</span> 340</span>
+                </div>
+                <button
+                    class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container active:scale-90 transition-all text-error">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">favorite</span>
+                </button>
+            </div>
+            <!-- Author Section -->
+            <section class="flex items-center justify-between mb-8 bg-surface-container p-4 rounded-xl">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-primary-container">
+                        <img alt="Rahel A. avatar" class="w-full h-full object-cover"
+                            data-alt="A professional headshot of a creative woman named Rahel A., with a serene and confident expression. The lighting is soft and natural, emphasizing a minimalist and organic aesthetic. The background is a neutral, warm beige studio wall. She has dark hair and wears a simple, forest green top, aligning perfectly with the Organic Modernism brand palette."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJOT6LX4fw4taoE1JCqb2sY-K2v4-bbWLhYrn6Vf1dzHG1Z_wIgISLw9iaYwRBtOH8YLOVDF2rapwpiDcNW_VzcQrAFNELe10C_Lb8Tkv3mo4Nxs4ZNiKdWvwBpA0LfntvskOqSN5I9W3vvhBypj1RzvVWf_4FEGbWGrPA-_XrdDeSbH3Hd9KzZBnFQork90jBRR0bBgESdRQJY8TbWS7r-lrF3DlknvYeiDnhTIaXJz7nDCN176XEBhPB9SJfbyKOkPx2Ct1ZSieI" />
+                    </div>
+                    <div>
+                        <p class="font-headline-md text-body-md text-primary font-bold">Rahel A.</p>
+                        <p class="text-on-surface-variant text-sm">@rahel_fusion</p>
+                    </div>
+                </div>
+                <button
+                    class="bg-primary text-on-primary px-6 py-2 rounded-full font-body-md hover:bg-primary-container transition-colors active:scale-95">
+                    Follow
+                </button>
+            </section>
+            <!-- Description -->
+            <div class="mb-10">
+                <h3 class="font-label-caps text-label-caps text-on-surface-variant mb-2">DESCRIPTION</h3>
+                <p class="font-body-lg text-on-surface leading-relaxed">
+                    A deep dive into fusion jazz and acoustic rhythms. This cover explores the intersection of classical
+                    technique and modern distortion, creating a unique soundscape that honors traditional roots while
+                    embracing experimental textures.
+                </p>
+            </div>
+            <!-- Comments Section -->
+            <section class="mb-10">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-label-caps text-label-caps text-on-surface-variant">COMMENTS (12)</h3>
+                    <button class="text-secondary font-body-md font-bold">View All</button>
+                </div>
+                <div class="space-y-4">
+                    <!-- Comment 1 -->
+                    <div class="flex gap-4 p-4 bg-surface-container-low rounded-lg">
+                        <img alt="User Avatar" class="w-8 h-8 rounded-full object-cover"
+                            data-alt="Close up avatar of a young man with a friendly smile, photographed in soft outdoor light. The image has a clean, modern look with natural tones."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD44mnA6OaYceeDw_TxswkKm_Oyo_moTJ3_lTmrGqhcHEE83yarRmKuC1WcF8JZoIBwtseCx1lvLvmFJcJn-EvOYsenZvH8VjmBZwIvbNihS-ewyshrN3slyxlhy18yHMitMR3KIRWGWK3XBky0_As2gnJbLz0EUriP9AEIJOZ_GWloy0iR7tjlKsHYMCAifJB4ZxENtY-mYaDim7YbPsgICviBdIDF5ODbwjq3bKgt71SJ3prNIZCjORcg2uVD1Fe-xp1ArEbkYiZ1" />
+                        <div>
+                            <p class="text-sm font-bold text-primary">Marcus J.</p>
+                            <p class="text-sm text-on-surface-variant">The transition at 1:45 is absolutely ethereal.
+                                Incredible technique!</p>
+                        </div>
+                    </div>
+                    <!-- Comment 2 -->
+                    <div class="flex gap-4 p-4 bg-surface-container-low rounded-lg">
+                        <img alt="User Avatar" class="w-8 h-8 rounded-full object-cover"
+                            data-alt="Portrait of a woman with vibrant energy and creative styling, set against a soft minimalist background with warm studio lighting."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8YtoYY8DaJlKcGQ1U4gvXoO4UfhDmpR3CVLu9ySCFwRAx1HOp0EuSiJZmMyMUfnKmoVceTjroqQ7QvG97w-6C0_UyBaIoTH6fCWucQx808VHskS08uBRj5Hy84FAe3WqAlFe-l2FSHBGE190qaYaQRuGVYoe6OndasO6pUxsKoR08mJrtSVdFdjrPQQlMuuz8zR42mszl-fsaWMrM2N4yzK2ks7q3WxMwoPjHfuv0872G8IxdPOaW9KJVWHbT94JmmDtd3KTNT90t" />
+                        <div>
+                            <p class="text-sm font-bold text-primary">Sloane W.</p>
+                            <p class="text-sm text-on-surface-variant">That sustain is everything. Needs a full album
+                                release ASAP.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Similar Work Section -->
+            <section class="mb-8">
+                <h3 class="font-label-caps text-label-caps text-on-surface-variant mb-4">SIMILAR WORK</h3>
+                <div class="flex gap-grid-gutter overflow-x-auto pb-4 -mx-2 px-2 no-scrollbar">
+                    <!-- Card 1 -->
+                    <div class="min-w-[240px] bg-surface rounded-xl overflow-hidden shadow-sm flex-shrink-0 group">
+                        <div class="relative h-32 bg-primary-container overflow-hidden">
+                            <img alt="Neon Echos"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                data-alt="A close-up shot of electric guitar strings under neon lights, creating a high-contrast and energetic visual with vibrant teal and magenta highlights. The aesthetic is moody and creative."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPWJyhiv7iAuJ25kdChgw30wldp23zz8TP2xAp4qy2Darn1ZCwoaTlCaVvdQkSpv0w5Ka-T7Za4PrxvXFCJpcGa-OpPeOyKRJEwjsU0jWF32By9HHTuBKp--WgufAq9jrCfnIQpPiDVW6ok72Ns5XiNSMnP4FEff7rgSI_wpm2itZPoODlK6QGqGGgKbvENQ4k6AwxpuiHwUSjmXBj2Mfnwy3YmC3EXk7W-8oPB9-RAza7A6RWuWIr6rb-HVO6GkjcJ3rhM8ULM9cF" />
+                            <div class="absolute inset-0 bg-primary/20"></div>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-primary font-bold mb-1">Neon Echos</p>
+                            <p class="text-xs text-on-surface-variant mb-3">Electronic Fusion</p>
+                            <button
+                                class="w-full py-2 bg-primary text-white rounded-lg text-sm flex items-center justify-center gap-1 hover:bg-secondary transition-colors">
+                                View <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="min-w-[240px] bg-surface rounded-xl overflow-hidden shadow-sm flex-shrink-0 group">
+                        <div class="relative h-32 bg-primary-container overflow-hidden">
+                            <img alt="Organic Flow"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                data-alt="A wide, cinematic shot of a pianist performing on a stage in a dim auditorium, illuminated by a single, warm spotlight. The image captures a serene and powerful musical atmosphere."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW-kBTIsdWxveBNY0KlBhfnMhdAfNX0fxNdcfTI18RVUgY_SsnVcImofEziWTCUcQPGiUDmMetzy-ReD-wqPakCrYCHX6j06mFox6kSWDSLOk2ICqekwiY3JHWRXZACCJcp2LQuNwg0bopu_-GG2Y-k6NZVBMueCgGqce1aEX1wMb2CSAXZVAqkdB3n6Luu-xXcx-gBLOQ8fcFoCjmrhCv8qduvHn9wNG-C56QKOL-GSK9f9vZqiglNwDJ4IF9mfNfW_uImlla18eJ" />
+                            <div class="absolute inset-0 bg-primary/20"></div>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-primary font-bold mb-1">Organic Flow</p>
+                            <p class="text-xs text-on-surface-variant mb-3">Acoustic Ambient</p>
+                            <button
+                                class="w-full py-2 bg-primary text-white rounded-lg text-sm flex items-center justify-center gap-1 hover:bg-secondary transition-colors">
+                                View <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- Navigation suppressed for Detail screen as per Relevance Check -->
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body>
+
+</html>
